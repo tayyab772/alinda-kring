@@ -2,7 +2,8 @@
 
 import React from 'react';
 import './Home.css';
-import heroVideo from '../assets/hero-video.mp4';
+// import heroVideo from '../assets/hero-video.mp4';
+// import heroVideo from '../../public/hero-video.mp4';
 import infoImage from '../assets/banner-2.png';
 import { Link } from "react-router-dom";
 function HomePage() {
@@ -28,11 +29,10 @@ function HomePage() {
           {/* Left Div for Video */}
           <div className="hero-media-column">
             <div className="video-wrapper">
-              <video className="hero-video" autoPlay loop muted playsInline>
-        
-                <source src={heroVideo} type="video/mp4" /> {/*ye prop ki example he heroVideo */}
-           
-              </video>
+             <video className="hero-video" autoPlay loop muted playsInline>
+  <source src="/hero-video.mp4" type="video/mp4" />
+</video>
+
              
            
             </div>

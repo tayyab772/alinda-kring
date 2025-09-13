@@ -5,10 +5,10 @@ import { db } from "./firebase";
 import { useParams, Link } from "react-router-dom";
 import "./ArtworkDetail.css";
 import wallImg from "../assets/empty-wall.jpg";
-import EnquiryForm from "./EnquiryForm"; // Import the EnquiryForm component
+import EnquiryForm from "./EnquiryForm"; 
 
 const ArtworkDetail = () => {
-  const { artistName, artworkId } = useParams(); // 👈 Now we expect both artistName and artworkId in the URL
+  const { artistName, artworkId } = useParams(); 
   const [viewOnWall, setViewOnWall] = useState(false);
   const [showEnquiryForm, setShowEnquiryForm] = useState(false);
   const [artwork, setArtwork] = useState(null);
@@ -75,7 +75,7 @@ const ArtworkDetail = () => {
 <div className="artwork-detail-right">
   {/* Ye image ko motion img banado */}
   <motion.img
-    layoutId={`artwork-${artwork.id}`}   // 👈 unique layoutId
+    layoutId={`artwork-${artwork.id}`}   
     src={artwork.imageUrl}
     alt={artwork.artworkName}
     className="artwork-image"
