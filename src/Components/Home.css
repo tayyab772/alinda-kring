@@ -98,7 +98,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+   height: auto;
+  display: block;
     object-fit: cover;
 }
 
@@ -143,7 +144,7 @@ body {
 }
 
 .hero-description {
-    font-size: 14px;
+    font-size: .8em;
     line-height: 1.6;
     max-width: 600px;
     color: #ffffff;
