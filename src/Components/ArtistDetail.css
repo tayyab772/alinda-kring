@@ -1,0 +1,119 @@
+.artist-detail-page {
+  padding: 40px;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.artist-detail-layout {
+  display: flex;
+  gap: 60px;
+  padding: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.artist-detail-left {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+.artist-detail-nav {
+  display: flex;
+  flex-direction: row; /* horizontal */
+  gap: 32px;
+  margin-bottom: 30px;
+  margin-top: 18px;
+}
+
+.artist-detail-nav button {
+  /* ...existing code... */
+  background: none;
+  border: none;
+  color: #373535; /* light brown like sample */
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0 0 2px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.artist-detail-nav button.active {
+  color: #2d2363; /* dark purple like sample */
+  border-bottom: 2px solid #2d2363;
+  font-weight: 500;
+}
+
+.artist-detail-nav button:hover {
+  color: #2d2363;
+}
+
+.artist-detail-content {
+  margin-bottom: 20px;
+  font-size: 10px;
+  color: #222;
+}
+
+.artist-detail-right {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.artist-detail-img {
+  width: 350px;
+  border-radius: 8px;
+ 
+  object-fit: contain;
+  background: #fff;
+}
+
+.artist-works-grid {
+  display: grid;
+  /* responsive: fill with a minimum card width and stretch */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+}
+
+.artist-work-card {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  transition: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.artist-work-card:hover {
+  box-shadow: none;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.artist-work-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  object-position: center;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+  padding: 0;
+}
+
+.work-title {
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: 500;
+}

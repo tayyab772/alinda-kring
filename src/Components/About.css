@@ -1,0 +1,144 @@
+.about-layout {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  min-height: 60vh;
+  align-items: center;
+}
+
+.about-left, .about-right {
+  flex: 1;
+}
+
+.about-right,
+.about-section2-left {
+  font-size: 1.15rem;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.7;
+}
+
+.about-section2 {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.about-section2-left {
+  flex: 1;
+}
+
+.about-section2-left h2 {
+  font-size: 1rem;
+  color: #2d2363;
+  margin-bottom: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-section2-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-full-img {
+  width: 500px;
+  height: 330px;
+  max-width: 100%;
+ 
+  object-fit: cover;
+  object-position: center top; 
+  box-shadow: 0 4px 24px rgba(44,44,44,0.10);
+}
+
+.about-section3 {
+  width: 100%;
+  padding: 40px 40px 0 40px;
+  text-align: center;
+}
+
+.about-section3-text {
+  font-size: 1rem;     
+  font-weight: 300;        
+  letter-spacing: 0.5px;
+  color: #2d2363;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.about-section5 {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.about-section5-text {
+  flex: 1;
+  font-size: .8rem;
+   font-weight: 300; 
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.7;
+}
+
+.about-section5-text h2 {
+  font-size: 1rem;
+  color: #2d2363;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+@media (max-width: 768px) {
+  .about-layout,
+  .about-section2 {
+    flex-direction: column;     /* Stack vertically */
+    padding: 20px;              /* Reduce padding */
+    gap: 20px;                  /* Reduce gap */
+    text-align: center;         /* Center text for better readability */
+  }
+
+  .about-left,
+  .about-right,
+  .about-section2-left,
+  .about-section2-right {
+    width: 100%;
+    flex: unset;
+  }
+
+  .about-right,
+  .about-section2-left {
+    font-size: 1rem;            /* Slightly smaller font */
+    line-height: 1.6;
+  }
+
+  .about-section2-left h2 {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+
+  .about-full-img {
+    width: 100%;                /* Full width on mobile */
+    height: auto;               /* Maintain aspect ratio */
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-section3 {
+    padding: 20px;
+  }
+
+  .about-section3-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+
+  
+}

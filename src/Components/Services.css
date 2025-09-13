@@ -1,0 +1,91 @@
+.services-section {
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+}
+
+.services-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.services-heading {
+  font-size: 1rem;
+  color: #2d2363;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.services-container h2 {
+  font-size: 1rem;
+  color: #2d2363;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.services-container h3 {
+  font-size: 1rem;
+  color: #2d2363;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.services-container p {
+  font-size: .8rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.services-container ul {
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+.services-container li {
+  font-size: .8rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.services-closing {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 16px;
+}
+
+.services-tagline {
+  font-size: 1rem;
+  margin-top: 32px;
+  color: #2d2363;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 20px;
+  }
+
+  .services-heading {
+    font-size: 1.3rem;
+  }
+
+  .services-container h2,
+  .services-container h3 {
+    font-size: 1rem;
+  }
+
+  .services-container p,
+  .services-container li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .services-tagline {
+    font-size: 1rem;
+  }
+}

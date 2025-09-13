@@ -1,0 +1,77 @@
+.art-therapy-section {
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+}
+
+.art-therapy-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.art-therapy-heading {
+  font-size: 1rem;
+  color: #2d2363;
+  margin-bottom: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.art-therapy-container p {
+  font-size: .8rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.art-therapy-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.art-therapy-list li {
+  font-size: .8rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.therapy-label {
+  font-weight: 300;
+  color: #2d2363;
+  margin-right: 6px;
+}
+
+.art-therapy-tagline {
+  font-size: 1rem;
+  margin-top: 40px;
+  color: #2d2363;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .art-therapy-section {
+    padding: 20px;
+  }
+
+  .art-therapy-heading {
+    font-size: 1.3rem;
+  }
+
+  .art-therapy-container p,
+  .art-therapy-list li {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .therapy-label {
+    font-size: 0.9rem;
+  }
+
+  .art-therapy-tagline {
+    font-size: 1rem;
+    margin-top: 28px;
+  }
+}

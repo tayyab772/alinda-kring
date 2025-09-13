@@ -1,0 +1,64 @@
+.exhibition-page {
+  padding: 40px 0 0 60px;
+}
+
+.exhibition-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 90px;
+}
+
+.exhibition-img {
+  width: 500px;
+  height: auto;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.exhibition-info {
+  max-width: 500px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.exhibition-info h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.exhibition-info h4 {
+  margin-bottom: 15px;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.exhibition-info p {
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 1.7;
+}
+
+
+/* ...existing code... */
+
+@media (max-width: 768px) {
+  .exhibition-page {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .exhibition-content {
+    flex-direction: column;
+    gap: 20px;
+ 
+  }
+  .exhibition-img {
+    width: 100%;
+    max-width: 350px;
+  }
+  .exhibition-info {
+    max-width: 100%;
+    text-align: left;
+  }
+}
