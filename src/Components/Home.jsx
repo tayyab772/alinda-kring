@@ -2,10 +2,9 @@
 
 import React from 'react';
 import './Home.css';
-// import heroVideo from '../assets/hero-video.mp4';
-// import heroVideo from '../../public/hero-video.mp4';
+import heroVideo from '../assets/hero-video.mp4';
 import infoImage from '../assets/banner-2.png';
-import { Link } from "react-router-dom";
+
 function HomePage() {
   return (
     <div className="home-page-wrapper">
@@ -29,10 +28,11 @@ function HomePage() {
           {/* Left Div for Video */}
           <div className="hero-media-column">
             <div className="video-wrapper">
-             <video className="hero-video" autoPlay loop muted playsInline>
-  <source src="/hero-video.mp4" type="video/mp4" />
-</video>
-
+              <video className="hero-video" autoPlay loop muted playsInline>
+        
+                <source src={heroVideo} type="video/mp4" /> {/*ye prop ki example he heroVideo */}
+           
+              </video>
              
            
             </div>
@@ -63,9 +63,7 @@ function HomePage() {
                  creating new opportunities for emerging artists and collectors. 
                  Thank you for being part of this journey!
             </p>
-           <Link to="/about">
-  <button className="info-learnmore-btn">Learn More</button>
-</Link>
+            <button className="info-learnmore-btn">Learn More</button>
           </div>
          
           {/* Left: Image */}
