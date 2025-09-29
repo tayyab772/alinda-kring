@@ -33,9 +33,9 @@ const About = () => {
             Alinda has an MA in Art Business from Sotheby’s Institute of Art and a BSc in Business Management & Financial Accounting from King’s College London.
           </p>
         </div>
-        <div className="about-section2-right">
+        {/* <div className="about-section2-right">
           <img src={alindaImg} alt="Alinda Kring" className="about-full-img" />
-        </div>
+        </div> */}
       </div>
 
       <div className="about-section3">
