@@ -48,9 +48,8 @@
   width: 500px;
   height: 330px;
   max-width: 100%;
- 
   object-fit: cover;
-  object-position: center top; 
+  object-position: center top;
   box-shadow: 0 4px 24px rgba(44,44,44,0.10);
 }
 
@@ -61,13 +60,12 @@
 }
 
 .about-section3-text {
-  font-size: 1rem;     
-  font-weight: 300;        
+  font-size: 1rem;
+  font-weight: 300;
   letter-spacing: 0.5px;
   color: #2d2363;
   font-family: 'Montserrat', sans-serif;
 }
-
 
 .about-section5 {
   display: flex;
@@ -80,7 +78,7 @@
 .about-section5-text {
   flex: 1;
   font-size: .8rem;
-   font-weight: 300; 
+  font-weight: 300;
   color: #222;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.7;
@@ -93,15 +91,85 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.about-award-wrapper {
+  width: 100%;
+  max-width: 760px;
+  height: 420px;
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  --img-x: 34%;
+  --img-y: 28%;
+  --img-scale: 1;
+  --img-translate-x: -4%;
+  --img-translate-y: 6%;
+}
 
+.about-award-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--img-x) var(--img-y);
+  display: block;
+  transition: object-position 160ms ease, transform 160ms ease;
+  transform-origin: center;
+  transform: translate(var(--img-translate-x), var(--img-translate-y)) scale(1);
+  will-change: transform, object-position;
+}
+
+@media (min-width: 1400px) {
+  .about-award-wrapper {
+    height: 520px;
+    --img-x: 32%;
+    --img-y: 26%;
+    --img-scale: 0.84;
+    --img-translate-x: -6%;
+    --img-translate-y: 8%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .about-award-wrapper {
+    height: 460px;
+    --img-x: 34%;
+    --img-y: 28%;
+    --img-scale: 0.86;
+    --img-translate-x: -4%;
+    --img-translate-y: 6%;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-award-wrapper {
+    height: 360px;
+    --img-x: 36%;
+    --img-y: 30%;
+    --img-scale: 0.9;
+    --img-translate-x: -3%;
+    --img-translate-y: 4%;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-award-wrapper { height: 260px; }
+  .about-award-img {
+    object-fit: contain;
+    object-position: center;
+    transform: none;
+    background-color: transparent;
+  }
+}
 
 @media (max-width: 768px) {
   .about-layout,
   .about-section2 {
-    flex-direction: column;     /* Stack vertically */
-    padding: 20px;              /* Reduce padding */
-    gap: 20px;                  /* Reduce gap */
-    text-align: center;         /* Center text for better readability */
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
   }
 
   .about-left,
@@ -114,7 +182,7 @@
 
   .about-right,
   .about-section2-left {
-    font-size: 1rem;            /* Slightly smaller font */
+    font-size: 1rem;
     line-height: 1.6;
   }
 
@@ -124,8 +192,8 @@
   }
 
   .about-full-img {
-    width: 100%;                /* Full width on mobile */
-    height: auto;               /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
     max-width: 100%;
     margin: 0 auto;
   }
@@ -138,7 +206,4 @@
     font-size: 0.95rem;
     line-height: 1.6;
   }
-
-
-  
 }

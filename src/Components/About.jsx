@@ -48,7 +48,14 @@ const About = () => {
 <div className="about-section2">
 
   <div className="about-section2-right">
-          <img src={award} alt="Alinda Kring" className="about-full-img" />
+          <div className="about-award-wrapper">
+            <img
+              src={award}
+              alt="Award - Alinda Kring"
+              className="about-award-img"
+              loading="lazy"
+            />
+          </div>
         </div>
         <div className="about-section2-left">
           <h2>Founder – Alinda Kring Art Advisory</h2>
